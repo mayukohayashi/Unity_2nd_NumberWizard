@@ -20,18 +20,17 @@ public class NumberGuess : MonoBehaviour
     void StartGame()
     {
         NextGuess();
-        max = max + 1;
     }
 
     public void OnPressHigher()
     {
-        min = guess;
+        min = guess + 1;
         NextGuess();
     }
 
     public void OnPressLower()
     {
-        max = guess;
+        max = guess - 1;
         NextGuess();
     }
 

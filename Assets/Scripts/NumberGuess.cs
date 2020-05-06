@@ -16,10 +16,8 @@ public class NumberGuess : MonoBehaviour
 
     void StartGame()
     {
-        max = 1000;
-        min = 1;
-        guess = 500;
         max = max + 1;
+        guess = (max + min) / 2;
     }
 
     public void OnPressHigher()

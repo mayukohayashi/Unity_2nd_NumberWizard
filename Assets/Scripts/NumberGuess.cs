@@ -19,8 +19,7 @@ public class NumberGuess : MonoBehaviour
 
     void StartGame()
     {
-        guess = (max + min) / 2;
-        guessText.text = guess.ToString();
+        NextGuess();
         max = max + 1;
     }
 
@@ -38,7 +37,7 @@ public class NumberGuess : MonoBehaviour
 
     void NextGuess()
     {
-        guess = (max + min) / 2;
+        guess = Random.Range(max, min);
         guessText.text = guess.ToString();
     }
 }
